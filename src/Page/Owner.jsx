@@ -2,7 +2,7 @@ const Owner = () => {
   return (
     <>
       <h4 className="text-center">Namfah - Group E - 11</h4>
-      <img src="src/assets/IMG_0334.jpg"></img>
+      <img src="/IMG_0334.jpg"></img>
       <p>"Hello! I'm Namfah"</p>
       <p>I'm all about building genuine connections,</p>
       <p>
