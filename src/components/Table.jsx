@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-
 import { useEffect } from "react";
 
 const Table = ({ subHeader, tableArray, setTableArray }) => {
