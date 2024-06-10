@@ -2,7 +2,6 @@
 
 import { useEffect } from "react";
 
-// eslint-disable-next-line react/prop-types
 const Table = ({ subHeader, tableArray, setTableArray }) => {
   if (subHeader === "home") {
     console.log(1);
@@ -12,10 +11,8 @@ const Table = ({ subHeader, tableArray, setTableArray }) => {
 
   function onDelete(index) {
     console.log(tableArray);
-    // Create a new array with the item removed
     const newArray = [...tableArray];
     newArray.splice(index, 1);
-    // Update the state with the new array
     setTableArray(newArray);
     console.log(newArray);
   }

@@ -1,5 +1,6 @@
 import React from "react";
 
+//หลังจากสร้าง path เรียบร้อยให้นำมาลิงค์กับ NavBar
 const Navbar = () => {
   return (
     <div>
