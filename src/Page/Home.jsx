@@ -39,6 +39,7 @@ const Home = () => {
           Admin Home Sector
         </button>
       </div>
+      {/* กำหนดส่งข้อมูลค่าปัจจุบบันไปยัง Table */}
       {/* แสดง Table ดังต่อไปนี้ หาก detail เป็น "home" */}
       {detail === "home" && (
         <Table
@@ -47,9 +48,11 @@ const Home = () => {
           setTableArray={setTableArray}
         />
       )}
-      {/* แสดง CreateUser และ Table หาก detail เป็น "admin" */}
+      {/* ส่ง props ไปยัง create User เพื่อให้ create user  สามารถส่งข้อมูลกลับมายังหน้า Home ได้ */}
       {detail === "admin" && <CreateUser sendDataToParent={handleUserData} />}
-      {/* ในส่วนของ admin จะแสดง CreateUser พร้อมระบุ props ด้วย sendDataToParent เพื่อให้ CreateUser สามารถส่งข้อมูลผู้ใช้กลับไปยังคอมโพเนนต์หลักได้ โดยที่ handleUserData ถูกใช้เป็น callback function ซึ่งจะถูกเรียกเมื่อมีการสร้างผู้ใช้ใหม่และต้องการส่งข้อมูลผู้ใช้กลับไปยัง Table   */}
+      {/* แสดง CreateUser และ Table หาก detail เป็น "admin" */}
+      {/* ในส่วนของ admin จะแสดง CreateUser พร้อมส่ง props ด้วย sendDataToParent เพื่อให้ CreateUser สามารถส่งข้อมูลผู้ใช้กลับไปยังคอมโพเนนต์หลักได้ โดยที่ handleUserData ถูกใช้เป็น callback function ซึ่งจะถูกเรียกเมื่อมีการสร้างผู้ใช้ใหม่และต้องการส่งข้อมูลผู้ใช้กลับไปยัง Table   */}
+      {/* กำหนดส่งข้อมูลค่าปัจจุบบันไปยัง Table เพื่อให้สามารถอัพเดทข้อมูลผ่านตารางได้*/}
       {detail === "admin" && (
         <Table
           subHeader={detail}

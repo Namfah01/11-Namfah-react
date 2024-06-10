@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+// รับ Props เพื่อส่งข้อมูลกลับไปยังหน้า Home
 const CreateUser = ({ sendDataToParent }) => {
   //กำหนด state สำหรับเก็บข้อมูลที่กรอกทั้ง Name Lastname Position
   const [name, setName] = useState("");
@@ -38,6 +39,8 @@ const CreateUser = ({ sendDataToParent }) => {
     }
   };
 
+  //สร้าง form createUser ร่วมกับฟังก์ชั่น handleChange เพื่ออัปเดตการเปลี่ยนแปลงและ handdleSubmit เมื่อมีการส่งฟอร์ม
+
   return (
     <>
       <div className="create">
@@ -50,21 +53,18 @@ const CreateUser = ({ sendDataToParent }) => {
             placeholder="Name"
             value={name}
             onChange={handleChange(setName)}
-            className="input1"
           />
           <input
             type="text"
             placeholder="Last Name"
             value={lastname}
             onChange={handleChange(setLastname)}
-            className="input2"
           />
           <input
             type="text"
             placeholder="Position"
             value={position}
             onChange={handleChange(setPosition)}
-            className="input3"
           />
           <button type="submit">Save</button>
         </form>
