@@ -132,10 +132,6 @@ button {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.button:hover {
-  background: rgb(180, 178, 178);
-}
-
 input {
   display: inline;
   justify-content: space-between;
