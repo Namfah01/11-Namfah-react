@@ -34,7 +34,7 @@ h1 {
 .nav {
   display: flex;
   justify-content: flex-end;
-  border: black
+  border: black;
   padding: 6px;
   border-bottom: 1px solid black;
 }
