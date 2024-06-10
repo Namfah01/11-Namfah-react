@@ -123,12 +123,17 @@ table {
 button {
   padding: 10px 20px;
   border: black;
+  border: 1px solid black;
   background-color: rgb(165, 168, 173);
   color: #000000;
   cursor: pointer;
   border-radius: 4px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.button:hover {
+  background: rgb(180, 178, 178);
 }
 
 input {
