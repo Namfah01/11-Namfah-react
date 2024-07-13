@@ -18,6 +18,8 @@ Receives props from the Home component to display and manage student data. Likel
 
 ![CreateUser Component](https://github.com/user-attachments/assets/b301bc0c-e146-4da0-a643-fdc55445d3bf)
 
+![CreateUser Component](https://github.com/user-attachments/assets/0117ed71-9292-49d4-8a61-e35ae62d3668)
+
 Used in the admin view to add new students to the list. Sends new user data back to the Home component via the handleUserData function.
 
 ## Owner Component
